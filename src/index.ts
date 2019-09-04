@@ -1,4 +1,4 @@
-export const r3 = (value: number, start1: number, stop1: number, start2: number, stop2: number): number => {
-  const retVal: number = (start2 + (stop2 - start2) * ((value - start1) / (stop1 - start1)));
+export const r3 = (value: number, initialStartValue: number, initialEndValue: number, finalStartValue: number, finalEndValue: number): number => {
+  const retVal: number = (finalStartValue + (finalEndValue - finalStartValue) * ((value - initialStartValue) / (initialEndValue - initialStartValue)));
   return retVal;
 }
